@@ -1,12 +1,16 @@
+import pao_frances from "../assets/pao-frances.png";
+import croissant from "../assets/croissant.png";
+import baguete from "../assets/baguete.png";
+import pao_de_queijo from "../assets/pao-de-queijo.png";
 
 import { Order, OrderStatus, OrderType, Product, Plan, Customer } from '../types';
 
 // Mock Data
 const mockProducts: Product[] = [
-  { id: 'p1', name: 'Pão Francês', price: 0.75, isActive: true, description: 'Clássico pão francês, crocante por fora e macio por dentro.', imageUrl: 'https://picsum.photos/seed/paofrances/400/300' },
-  { id: 'p2', name: 'Croissant de Manteiga', price: 5.50, isActive: true, description: 'Folhado e amanteigado, perfeito para o café da manhã.', imageUrl: 'https://picsum.photos/seed/croissant/400/300' },
-  { id: 'p3', name: 'Baguete', price: 8.00, isActive: true, description: 'Longa e crocante, ideal para sanduíches.', imageUrl: 'https://picsum.photos/seed/baguete/400/300' },
-  { id: 'p4', name: 'Pão de Queijo', price: 2.50, isActive: false, description: 'A delícia mineira que todos amam.', imageUrl: 'https://picsum.photos/seed/paodequeijo/400/300' },
+  { id: 'p1', name: 'Pão Francês', price: 0.75, isActive: true, description: 'Clássico pão francês, crocante por fora e macio por dentro.', imageUrl: pao_frances },
+  { id: 'p2', name: 'Croissant de Manteiga', price: 5.50, isActive: true, description: 'Folhado e amanteigado, perfeito para o café da manhã.', imageUrl: croissant },
+  { id: 'p3', name: 'Baguete', price: 8.00, isActive: true, description: 'Longa e crocante, ideal para sanduíches.', imageUrl: baguete },
+  { id: 'p4', name: 'Pão de Queijo', price: 2.50, isActive: false, description: 'A delícia mineira que todos amam.', imageUrl: pao_de_queijo },
 ];
 
 const mockPlans: Plan[] = [
